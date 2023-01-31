@@ -5,7 +5,7 @@
 
   $font-1: "font-1", sans-serif;
 
-  $color-1: #61dafb;
+$color-1: rgb(185, 116, 47);
 $color-2: salmon;
 $color-3: #282c34;
 $white: rgb(243, 243, 243);
@@ -23,10 +23,18 @@ $white: rgb(243, 243, 243);
 }
 
 body {
-  background: $white;
-  font-family: $font-1;
+  background: rgb(208, 190, 162);
+  font-family: $font-1;  
   // @include verticalCenter;
 }
 li {
   list-style-type: none;
+  
+  a{
+    text-decoration: none;
+  }
+}
+
+.title{
+  @include verticalCenter()
 }

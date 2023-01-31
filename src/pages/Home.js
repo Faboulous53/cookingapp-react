@@ -7,6 +7,7 @@ const Home = () => {
         <div>
             <Logo/>
             <Navigation/>
+            <h2 className='title'>Rechercher une recette</h2>
             
         </div>
     );

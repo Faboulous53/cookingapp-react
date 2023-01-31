@@ -1,0 +1,22 @@
+.navigation{
+margin: 30px;
+padding: 10px;
+background: $color-1;
+border-radius: 30px;
+    ul {
+    display: flex;
+    justify-content: space-evenly;
+    }
+
+     a , a:visited{
+        text-decoration: none;
+        color: black;        
+    }
+
+    a:hover{
+        color: bisque;
+        transition: 1s;
+    }
+
+
+}

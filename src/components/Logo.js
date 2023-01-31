@@ -6,7 +6,7 @@ import React from 'react';
 const Logo = () => {
     return (
         <div className='logo'>          
-            <h2>Cookingapp</h2>
+            <h2 className='title-logo'>Cookingapp</h2>
         </div>
     );
 };
