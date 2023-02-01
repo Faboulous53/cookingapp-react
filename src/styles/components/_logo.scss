@@ -1,10 +1,10 @@
 .logo{
-    @include verticalCenter;
+    @include verticalCenter;    
     background:url(../../assets/img/vegetables-g3c726d7bf_640.jpg) center/cover;
     width: 40%;
     max-width: 300px;
     min-width: 200px;
-    margin: 0 auto;
+    margin: 10px auto;
     border-radius: 300px;
     box-shadow: 6px 5px 3px rgb(0 0 0 / 31%);
     border: 5px solid rgb(185, 116, 47);
