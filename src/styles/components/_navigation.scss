@@ -1,8 +1,9 @@
 .navigation{
-margin: 30px;
+margin: 30px auto;
 padding: 10px;
 background: $color-1;
 border-radius: 30px;
+max-width: 70%;
     ul {
     display: flex;
     justify-content: space-evenly;

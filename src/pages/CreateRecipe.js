@@ -7,7 +7,7 @@ const Recipe = () => {
         <div>
             <Logo/>
             <Navigation/>
-            <h2 className='title'>Les recettes</h2>
+            <h2 className='title'> Créer une recette</h2>
         </div>
     );
 };

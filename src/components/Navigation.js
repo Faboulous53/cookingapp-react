@@ -9,7 +9,7 @@ const Navigation = () => {
                 <li>Accueil</li>
             </NavLink>
             <NavLink to="/recipe" className="nav">
-                <li>Recettes</li>
+                <li>Créer une recette</li>
             </NavLink>
             <NavLink to="/blog" className="nav">
             <li>Blog</li>
