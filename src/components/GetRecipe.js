@@ -15,19 +15,23 @@ const GetRecipe = () => {
     },[searchRecipe]);
     
     
+    
     return (
         
         <div className="recipe">
             
             <input type="text" placeholder='Recherche en anglais' onChange={(e)=> setSearchRecipe(e.target.value)}/>
             <ul>                
-                {
-                data
-                
-                .map((recipe, index) => (
-                <Card key={index} recipe={recipe}/>
+                {                    
+                 data?
+                 data 
+                .slice(0, 24)              
+                .map((recipe, index) => (                    
+                <Card key={index} recipe={recipe}/>              
                                                
-                ))}
+                ))
+                :<p className='no-recipe'>Aucune recette disponible</p>
+                }
             </ul>
         </div>
     );
