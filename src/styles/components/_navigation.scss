@@ -21,3 +21,27 @@ max-width: 70%;
 
 
 }
+
+@media screen and (max-width: 450px) {
+
+   
+
+    ul{
+      flex-direction: column;
+      height: auto;
+    }
+
+    .nav{
+        padding: 10px 0;
+        text-align: center;
+        border-bottom: 2px dotted rgb(199, 157, 105);
+        
+    }
+
+    .last{
+        padding: 10px 0;
+        text-align: center;
+    }
+
+   
+}

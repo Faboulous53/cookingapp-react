@@ -19,7 +19,7 @@ const GetRecipe = () => {
         
         <div className="recipe">
             
-            <input type="text" placeholder='Recherche' onChange={(e)=> setSearchRecipe(e.target.value)}/>
+            <input type="text" placeholder='Recherche en anglais' onChange={(e)=> setSearchRecipe(e.target.value)}/>
             <ul>                
                 {
                 data

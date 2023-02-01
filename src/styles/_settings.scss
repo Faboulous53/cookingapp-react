@@ -36,5 +36,11 @@ li {
 }
 
 .title{
-  @include verticalCenter()
+  @include verticalCenter
+}
+
+.center{
+  @include verticalCenter;
+  text-align: center;
+  margin: 50px;
 }

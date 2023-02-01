@@ -8,6 +8,9 @@ const Recipe = () => {
             <Logo/>
             <Navigation/>
             <h2 className='title'> Créer une recette</h2>
+            <div className="center">
+            <p>Cette page est en cours d'élaboration, revenez prochainement!</p>
+            </div>
         </div>
     );
 };
