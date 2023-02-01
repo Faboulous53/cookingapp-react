@@ -1,25 +1,31 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import Card from './Card';
 
 
 const GetRecipe = () => {
     const [data, setData] = useState([]);
+    const [searchRecipe, setSearchRecipe] = useState("");
 
     useEffect(() => {
         axios
-            .get('https://www.themealdb.com/api/json/v1/1/search.php?s=tomato')
-            .then((res) => setData(res.data));
+            .get('https://www.themealdb.com/api/json/v1/1/search.php?s='+ searchRecipe)
+            .then((res) => setData(res.data.meals));           
             
-            
-    }, []);
+    },[searchRecipe]);
+    
     
     return (
+        
         <div className="recipe">
-            <h1>les recettes</h1>
-            <ul>
-                {data.meals.map((recipe) => (
-                <li>{recipe.strMeal}
-                <img src={recipe.strMealThumb} alt="" /></li>
+            
+            <input type="text" placeholder='Recherche' onChange={(e)=> setSearchRecipe(e.target.value)}/>
+            <ul>                
+                {
+                data
+                
+                .map((recipe, index) => (
+                <Card key={index} recipe={recipe}/>
                                                
                 ))}
             </ul>

@@ -1,15 +1,25 @@
 import React from 'react';
 
-const Card = ({recipe}) => {
+const Card = ({ recipe }) => {
+  
     return (
         <li className="card">
-        
-        <div className="infos">
-          <h2>{recipe.strMeal}</h2>
-          <h4>{}</h4>
-          <p>Pop. {}</p>
-        </div>
-      </li>
+            <h2>{recipe.strMeal}</h2>
+            <img src={recipe.strMealThumb} alt={recipe.strMeal} />
+            <div className="infos">
+                <p>{recipe.strInstructions.slice(0, 50)}...</p>
+            </div>
+            <div className="link">
+                <button>
+                    {' '}
+                    <a href={recipe.strSource}>Source</a>
+                </button>
+                <button>
+                    {' '}
+                    <a href={recipe.strYoutube}>Vidéo</a>
+                </button>
+            </div>
+        </li>
     );
 };
 
