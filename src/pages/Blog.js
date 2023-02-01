@@ -10,8 +10,9 @@ const Blog = () => {
             <h2 className='title'>Blog</h2>  
             <div className="center">
             <p>Cette page est en cours d'élaboration, revenez prochainement!</p>
-            </div>          
+            </div>                     
         </div>
+        
     );
 };
 

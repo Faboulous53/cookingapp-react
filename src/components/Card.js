@@ -7,7 +7,7 @@ const Card = ({ recipe }) => {
             <h2>{recipe.strMeal}</h2>
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
             <div className="infos">
-                <p>{recipe.strInstructions.slice(0, 50)}...</p>
+                <p>{recipe.strInstructions.slice(0, 100)}...</p>
             </div>
             <div className="link">
                 <button>
